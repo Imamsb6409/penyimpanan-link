@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #4b4b4b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav #logo {
+  margin-left: 20px;
+  padding: 10px;
+  color: white;
+}
+nav ul {
+  margin-right: 20px;
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  background-color: #ababab;
+  gap: 20px;
+}
+#content .container {
+  margin-top: 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  gap: 10px;
+}
+#content .container .input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#content .container .input-area input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+}
+#content .container .input-area button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4b4b4b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#content .container .input-area button:hover {
+  background-color: #333;
+}
+#content .container .input-area #history-total {
+  margin-top: 10px;
+}
+
+#todo-list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+  font-size: 36px;
+  background-color: #ababab;
+  padding: 1%;
+}
+#todo-list div {
+  width: 400px;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+#todo-list div a {
+  text-decoration: none;
+  color: black;
+}
+#todo-list div .button-area {
+  box-shadow: none;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+#todo-list div .button-area .edit-btn,
+#todo-list div .button-area .delete-btn {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#todo-list div .button-area .edit-btn {
+  background-color: #28a745;
+}
+#todo-list div .button-area .edit-btn:hover {
+  background-color: #22863a;
+}
+#todo-list div .button-area .delete-btn {
+  background-color: #f44336;
+}
+#todo-list div .button-area .delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+hr {
+  width: 1000px;
+  border: 2px solid black;
+}/*# sourceMappingURL=style.css.map */
