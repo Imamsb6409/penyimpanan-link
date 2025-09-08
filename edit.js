@@ -36,7 +36,7 @@ saveBtn.addEventListener("click", function () {
     localStorage.setItem("todos", JSON.stringify(todos));
 
     // Arahkan kembali ke halaman utama
-    alert("Tugas berhasil diperbarui!");
+    alert("Link berhasil diperbarui!");
     window.location.href = "index.html";
   }
 });

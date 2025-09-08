@@ -12,7 +12,6 @@ function saveTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-
 // ... (Fungsi renderTodos() tetap sama) ...
 
 // 3. Fungsi untuk menampilkan (render) semua todo
@@ -96,9 +95,7 @@ todoList.addEventListener("click", function (event) {
   }
 });
 
-
-
-  function copyLink(url) {
-    navigator.clipboard.writeText(url);
-    alert("Link disalin!");
-  }
+function copyLink(url) {
+  navigator.clipboard.writeText(url);
+  alert("Link disalin!");
+}
