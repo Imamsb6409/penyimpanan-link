@@ -28,7 +28,7 @@ function renderTodos() {
 
     // Isi konten HTML untuk item todo
     div.innerHTML = `
-            <span><a href="${todo.link}" target="_blank">${todo.text}</a></span>
+            <span><a href="${todo.link}" target="_blank">${todo.text}</a><button class="copy-btn" onclick="copyLink('${todo.link}')">&#128279;</button></span>
             <div class="button-area">
                 <button class="edit-btn" data-id="${todo.id}">Edit</button>
                 <button class="delete-btn" data-id="${todo.id}">Hapus</button>
@@ -95,4 +95,10 @@ todoList.addEventListener("click", function (event) {
     window.location.href = `edit.html?id=${idToEdit}`;
   }
 });
-z
+
+
+
+  function copyLink(url) {
+    navigator.clipboard.writeText(url);
+    alert("Link disalin!");
+  }

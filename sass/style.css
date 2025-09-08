@@ -114,6 +114,11 @@ nav ul li a {
   padding: 10px;
   text-align: center;
 }
+#todo-list div span {
+  gap: 0px;
+  display: flex;
+  justify-content: center;
+}
 #todo-list div a {
   text-decoration: none;
   color: #117eb8;
@@ -125,6 +130,14 @@ nav ul li a {
 #todo-list div a:hover {
   text-decoration: underline;
   color: #106390;
+}
+#todo-list div .copy-btn {
+  padding: 5px 25px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: none;
+  font-size: x-large;
 }
 #todo-list div .button-area {
   box-shadow: none;

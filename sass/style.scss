@@ -111,6 +111,11 @@ nav {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     text-align: center;
+    span {
+      gap: 0px;
+      display: flex;
+      justify-content: center;
+    }
     a {
       text-decoration: none;
       color: #117eb8;
@@ -122,6 +127,14 @@ nav {
         text-decoration: underline;
         color: #106390;
       }
+    }
+    .copy-btn {
+      padding: 5px 25px;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      background: none;
+      font-size: x-large;
     }
     .button-area {
       box-shadow: none;
